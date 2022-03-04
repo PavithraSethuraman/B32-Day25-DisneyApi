@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lateef&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('Image.png') ;
+    /* background-image: linear-gradient(to right top, #030102, #181718, #272628, #373738, #48484a, #494a4d, #494b4f, #484d52, #374045, #263337, #152729, #051b1a); */
+}
+p{
+    font-family: 'Neonderthaw', cursive;
+    font-size:2em;
+    color: pink;
+    display: flex;
+    align-items: center;
+
+}
+h3{
+    font-family: 'Tangerine', cursive;
+    font-size:3em;
+    color: #8BEDF3 !important;
+
+}
+h1{
+    font-family: 'Merienda', cursive;
+    font-size:5em;
+    color: #8BEDF3 !important;
+}
+img{
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+#style{
+    font-family: 'Rancho', cursive;
+    color: yellow;
+}
+.text{
+    border: 3px solid #8BEDF3;
+    border-radius: 10px;
+    background-color: black;
+    font-family: 'Tangerine', cursive;
+    font-size:2em;
+    color: yellow;
+}
+
+
+
