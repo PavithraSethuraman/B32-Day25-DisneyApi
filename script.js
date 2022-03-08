@@ -31,7 +31,8 @@ document.getElementById('div3').appendChild(form)
 let text1 = document.createElement('input')
 text1.setAttribute('id','text1')
 text1.innerHTML = 'enter width'
-text1.setAttribute('onkeyup','getRandomDog(text1.value)')
+text1.setAttribute('onkeyup','disney(text1.value)')
+text1.setAttribute('onkeypress','typing()')
 text1.setAttribute('placeholder','Searc here')
 text1.classList.add('text','text-center')
 document.getElementById('form').appendChild(text1)
@@ -67,7 +68,7 @@ url.innerHTML = ""
 
 
 
-function getRandomDog(a){
+function disney(a){
 	if(a>0 && a<138){
 	let y=parseInt(a)
 fetch(`https://api.disneyapi.dev/characters/${y}`)
@@ -100,6 +101,19 @@ fetch(`https://api.disneyapi.dev/characters/${y}`)
 alert("please enter number between 6 - 137")
 }
 
+function typing(){
+	let show = document.getElementById("result");
+	if(event.charCode>=48 && event.charCode<=57 || event.key==="+" || event.key==="-" || event.key==="/" || event.key==="*"){
+	   show.value += key;
+	}
+	else if(event.key==="Enter"){
+		equal();
+	}
+	else{
+	 alert("type only numbers");
+	  event.preventDefault();
+	}
+ }
 
 
 
